@@ -22,6 +22,7 @@ var urlsToCache = [
     './img/favicon-64.png',
     './img/favicon-96.png',
     './img/favicon-128.png',
+    './img/favicon-144.png',
     './img/favicon-192.png',
     './img/favicon-256.png',
     './img/favicon-384.png',
@@ -81,7 +82,7 @@ self.addEventListener('fetch', e => {
                     return res;
                   }
                   
-                  return fetch.request(e.request);
+                  return fetch(e.request);
               })
     );
 })
